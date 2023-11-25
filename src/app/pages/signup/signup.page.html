@@ -1,13 +1,31 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>signup</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">signup</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="ion-padding">
+    <h1>Bienvenido</h1>
+    <p>Registrate para crear una cuenta</p>
+  </div>
+
+  <form action="">
+    <div class="ion-padding">
+      <ion-item>
+        <ion-input></ion-input>
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-input></ion-input>
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-input></ion-input>
+        <ion-icon name="lock-closed-outline"></ion-icon>
+      </ion-item>
+      <div>
+        <p>Ya tienes una cuenta?<a [routerLink]="['/login']">Acceder</a></p>
+      </div>
+    </div>
+    <ion-fab vertical="bottom" horizontal="end" style="margin-bottom: 30px;">
+      <ion-fab-button [routerLink]="['/home']">
+        <ion-icon name="chevron-forward"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </form>
 </ion-content>
