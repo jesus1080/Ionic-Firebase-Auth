@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Contenido
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,12 +9,16 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Bienvenidos</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="ion-padding">
+    <div>
+      <ion-title>Hola a todos!!</ion-title>
+    </div>
+    <div>
+      <ion-button (click)="logout()">SALIR</ion-button>
+    </div>
   </div>
 </ion-content>
