@@ -16,7 +16,7 @@ export class ResetPasswordPage implements OnInit {
 
   async resetPassword(){
     this.authService.resetPassword(this.email).then(()=>{
-      console.log('se envio link');
+      console.log('Se envio link al correo: '+this.email);
       this.route.navigate(['/login']) 
     }).catch((error)=>{
       console.log(error);
